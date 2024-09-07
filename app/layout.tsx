@@ -25,9 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header>
+          <nav>
+            This is Nav bar inside header.
+          </nav>
+        </header>
+        
         {children}
       </body>
     </html>
