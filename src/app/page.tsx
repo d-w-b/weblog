@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <div>
-      Hello World!
+      메인
     </div>
   )
 }
