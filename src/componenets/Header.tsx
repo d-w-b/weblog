@@ -1,15 +1,36 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import profileImage from '@/../public/images/profile.png';
 
 export default function Header() {
+
+  const options = [
+    'one', 'two', 'three'
+  ];
+
+  const defaultOption = options[0];
   return (
-    <header className='flex flex-row justify-between items-center py-8'>
-      <Link href = "/">
-        <h1 className='text-3xl font-bold'>Blog</h1>
-      </Link>
-      <nav className='flex gap-4 font-semibold'>
-        <Link href="/" >Home</Link>
-        <Link href="/cplusplus">C++</Link>
-      </nav>
+    <header className='sticky top-0 flex flex-row justify-between items-center py-4 text-sm'>
+      <div className="header_left flex flex-row items-center gap-12">
+        <Link href = "/" className='flex flex-row items-center text-xl font-bold gap-1'>
+          <Image src={profileImage} alt="EJ" width={16} height={16}/>
+          EJ
+        </Link>
+        <div className="header_main">
+          
+        </div>
+      </div>
+      <div className="header_right">
+        <nav className='flex gap-8 font-semibold text-neutral-700'>
+          <Link href="/posts">Posts</Link>
+          <Link href="/docs/cplusplus">
+            Docs
+          </Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+        
+      </div>
+      
     </header>
   )
 }

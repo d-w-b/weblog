@@ -1,9 +1,9 @@
-
+import Hero from "@/componenets/Hero";
 
 export default function Home() {
   return (
-    <div>
-      메인
-    </div>
+    <section>
+      <Hero />
+    </section>
   )
 }

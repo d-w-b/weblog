@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <p>EJ7</p>
+    <footer>
+      <p>EJ7</p>
+    </footer>
   )
 }
