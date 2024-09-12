@@ -13,7 +13,7 @@ export default function Hero() {
         />
       </div>
       <div>
-        <h2 className='font-bold text-xl'>EJ's DEVHUB</h2>
+        <h2 className='font-bold text-xl'>EJ DEVHUB</h2>
       </div>
     </section>
   )

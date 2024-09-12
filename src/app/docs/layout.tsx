@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import { IoIosArrowForward } from "react-icons/io";
 import { GrHomeRounded } from "react-icons/gr";
