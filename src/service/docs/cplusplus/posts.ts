@@ -14,7 +14,7 @@ export type PostData = Post & {content : string};
 
 export async function getAllPosts() : Promise<Post []>
 {
-    const filePath = path.join(process.cwd(), "data/posts", "posts.json");
+    const filePath = path.join(process.cwd(), "data/docs/cplusplus", "posts.json");
     return promises.readFile(filePath, 'utf-8')
     .then<Post[]>(JSON.parse)
     .then<Post[]>((posts : Post[]) => posts.sort((a,b) => (a.date > b.date ? -1 : 1)))
@@ -22,7 +22,7 @@ export async function getAllPosts() : Promise<Post []>
 
 export async function getPostData(fileName : string) : Promise<PostData>
 {
-    const filePath = path.join(process.cwd(), 'data/posts','posts', `${fileName}.md`)
+    const filePath = path.join(process.cwd(), 'data/docs/cplusplus','posts', `${fileName}.md`)
     const metadata = await getAllPosts()
     .then(posts => posts.find(post => post.path === fileName))
 

@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <section>
       <Hero />
-      <FeaturedPost />
     </section>
   )
 }

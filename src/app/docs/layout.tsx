@@ -28,7 +28,7 @@ export default function DocsLayout({
                     })
                 }
             </div>
-            <div className="px-8">
+            <div>
                 {children}
             </div>
         </>
