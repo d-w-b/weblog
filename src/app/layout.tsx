@@ -20,11 +20,11 @@ export default function RootLayout({
     <html lang="ko" className={`${GeistSans.className}`}>
       
       <body
-        className={`antialiased flex flex-col w-full max-w-screen-xl mx-auto font-medium`}
+        className={`antialiased flex flex-col w-full max-w-screen-lg mx-auto font-medium`}
       >
         <Header />
         
-        <main className="flex-auto grow bg-sky">{children}</main>
+        <main className="flex flex-col flex-auto grow bg-sky">{children}</main>
 
         <Footer />
       </body>

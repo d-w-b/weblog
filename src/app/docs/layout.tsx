@@ -15,7 +15,7 @@ export default function DocsLayout({
             
     return (
         <>
-            <div className="py-3 px-8 bg-gray-100 flex flex-row items-center gap-2 text-sm font-semibold rounded-md">
+            <div className="shadow-md py-3 px-8 bg-gray-50 flex flex-row items-center gap-2 text-sm font-semibold rounded-md">
                 {
                     pathArr.map( (path, index) =>{
                             return (
@@ -28,7 +28,7 @@ export default function DocsLayout({
                     })
                 }
             </div>
-            <div>
+            <div className='flex flex-col flex-grow'>
                 {children}
             </div>
         </>
