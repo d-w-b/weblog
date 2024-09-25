@@ -1,10 +1,10 @@
 [
     {
-        "title": "template",
-        "description": "template",
-        "date": "2024-09-13",
-        "category": "C++",
-        "path": "template",
+        "title": "Game Programming Patterns - Robert Nystromm",
+        "description": "게임 개발을 위한 디자인 패턴",
+        "date": "2024-09-25",
+        "category": "gamedev",
+        "path": "game-programming-patterns",
         "featured": false
     }
 ]

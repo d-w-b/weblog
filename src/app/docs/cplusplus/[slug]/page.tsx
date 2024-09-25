@@ -16,7 +16,7 @@ export default async function Page( {params} : Props)
         <article className="">
             <section className="flex flex-col">
 
-                <h1 className="text-4xl font-bold my-8">
+                <h1 className="text-2xl font-bold my-8">
                     {post.title}
                 </h1>
                 <p className="text-xl font-bold my-3">{post.description}</p>

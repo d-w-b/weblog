@@ -9,9 +9,9 @@ type Props = {
 }
 
 export default function MarkdownViewer( {content} : Props)
-{
+{//max-w-none text-md
     return <ReactMarkDown 
-    className={`prose lg:prose-lg max-w-none`} 
+    className={`prose prose-zinc prose-md max-w-none font-sans`} 
     remarkPlugins={[remarkGfm]}
     components={{
         code(props) {
